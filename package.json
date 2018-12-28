@@ -1,5 +1,6 @@
 {
   "name": "inspc",
   "version": "0.0.2",
-  "description": ""
+  "description": "",
+  "main": "logn.js"
 }
