@@ -37,8 +37,6 @@ DIFF="$(git diff --numstat)"
 
 DIFF="$(trim "$DIFF")"
 
-echo ">>$DIFF<<"
-
 if [ "$DIFF" != "" ]; then
 
     { red "\n\n    Error: First commit changes ...\n\n"; } 2>&3
