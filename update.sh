@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 exec 3<> /dev/null
@@ -37,6 +36,8 @@ fi
 DIFF="$(git diff --numstat)"
 
 DIFF="$(trim "$DIFF")"
+
+echo ">>$DIFF<<"
 
 if [ "$DIFF" != "" ]; then
 
