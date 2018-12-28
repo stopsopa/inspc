@@ -7,6 +7,8 @@ function isObject(x) {
 
 const node = typeof global !== 'undefined' && Object.prototype.toString.call(global.process) === '[object process]';
 
+let colorscache = null;
+
 if (node) {
 
     global.__stack || Object.defineProperty(global, '__stack', {
@@ -108,11 +110,13 @@ if (node) {
 
             opt.depth   = depth;
 
-            opt.colors  = colors;
+            opt.colors  = (typeof colorscache === 'boolean') ? colorscache : colors;
         }
 
         return __line(stack + 3) + "\n" + util.inspect(obj, opt);
     };
+
+    tool.colors = c => colorscache = c;
 
     module.exports = tool;
 }
