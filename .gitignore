@@ -1,0 +1,4 @@
+/.idea/
+*.tgz
+node_modules
+yarn.lock
