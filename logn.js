@@ -213,7 +213,7 @@ var native = (function () {
 
                         return;
                     }
-                    m = JSON.stringify(m, null, '    ');
+                    m = JSON.stringify(m, null, 4);
 
                     process.stdout.write(`\n${m}`);
                 })
@@ -362,10 +362,12 @@ log.json = function () {
     native.start();
 
     Array.prototype.slice.call(arguments).forEach(function (a) {
-        return (JSON.stringify(a, null, '  ') + '').split(/\n/g).forEach(function (l) {
+        return (JSON.stringify(a, null, 4) + '').split(/\n/g).forEach(function (l) {
             native(l);
         });
     });
+
+    native("");
 
     native.flush();
 
@@ -514,7 +516,7 @@ log.i = require('./logi');
         }
         else {
 
-            limit = false;
+            limit = 1;
         }
 
         function inner(d, l, index) {
@@ -566,6 +568,8 @@ log.i = require('./logi');
         args.forEach(function (d) {
             inner(d);
         });
+
+        native("");
 
         native.flush();
 
