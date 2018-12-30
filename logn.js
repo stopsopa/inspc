@@ -400,6 +400,8 @@ log.stack = function (n /* def: 0 */) {
 
 log.i = require('./logi');
 
+log.t = require('./logt');
+
 (function (ll) {
 
     // http://stackoverflow.com/a/16608045/5560682

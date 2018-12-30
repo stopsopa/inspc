@@ -32,6 +32,12 @@ Just fallback to console.log but with timestamp
 
     const logt = require('inspc/logt');
     
+or:
+    
+    const log = require('inspc');
+    
+    cosnt logt = log.t;
+    
 logw
 ---
 
@@ -61,7 +67,7 @@ require all
 will print:
 
 ![image](https://user-images.githubusercontent.com/3743506/50531636-4ca2f200-0b05-11e9-93ae-9641ed80431d.png)
-    
+
 
     
          
