@@ -64,6 +64,10 @@ require all
     log.json(data)
     log.i(data, 1, true) // colors on
     
+will print:
+
+![image](https://user-images.githubusercontent.com/3743506/50531636-4ca2f200-0b05-11e9-93ae-9641ed80431d.png)
+    
 addidional tools
 ---    
 
@@ -77,10 +81,6 @@ addidional tools
     const userAgent = (function () {try {return staticContext.req.headers['user-agent']}catch(e){}}());
     
     isGoogleChrome(userAgent) 
-    
-will print:
-
-![image](https://user-images.githubusercontent.com/3743506/50531636-4ca2f200-0b05-11e9-93ae-9641ed80431d.png)
 
 
     
