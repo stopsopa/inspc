@@ -64,6 +64,12 @@ require all
     log.json(data)
     log.i(data, 1, true) // colors on
     
+addidional tools
+---    
+
+    require('inspc/isObject')
+    require('inspc/isArray')
+    
 will print:
 
 ![image](https://user-images.githubusercontent.com/3743506/50531636-4ca2f200-0b05-11e9-93ae-9641ed80431d.png)
