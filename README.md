@@ -73,7 +73,9 @@ addidional tools
 
     require('inspc/isObject')
     require('inspc/isArray')
-    require('inspc/isNode')
+    
+    const node = require('inspc/isNode');
+    
     require('inspc/getUserAgent')
     
     const isGoogleChrome = require('inspc/isGoogleChrome')

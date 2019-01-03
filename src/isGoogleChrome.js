@@ -15,8 +15,8 @@ module.exports = function (ua) {
         u,l
     } = getUserAgent(ua);
 
-    return /chrome/.test(l)
-        && /chromium/.test(l)
+    return l.indexOf('chrome') > -1
+        && l.indexOf('chromium') === -1
         && l.indexOf('opr') === -1
     ;
 };

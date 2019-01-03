@@ -53,7 +53,7 @@ module.exports = function (ua) {
     }
     catch (e) {
 
-        throw `getUserAgent: Can't detect browser`;
+        throw `getUserAgent: Can't detect browser: ` + (e + '');
     }
 
     return {
