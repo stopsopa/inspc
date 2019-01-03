@@ -69,6 +69,9 @@ addidional tools
 
     require('inspc/isObject')
     require('inspc/isArray')
+    require('inspc/isNode')
+    require('inspc/getUserAgent')
+    require('inspc/isGoogleChrome')
     
 will print:
 
