@@ -2,7 +2,6 @@
 const node = require('./isNode');
 
 /**
- *
  // navigator.userAgent:
  //    opera mac Version:57.0.3098.106 (on MacBook Pro macOS Mojave, 10.14.1 (18B75)):
  //        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 OPR/57.0.3098.106"
@@ -20,6 +19,10 @@ const node = require('./isNode');
  //         "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; rv:11.0) like Gecko"
  * @param ua
  * @returns {boolean}
+ *
+ * If you want to make it works in node and browser then do:
+ *
+ * getUserAgent((function () {try {return staticContext.req.headers['user-agent']}catch(e){}}()))
  */
 module.exports = function (ua) {
 

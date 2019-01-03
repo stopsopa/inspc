@@ -71,7 +71,12 @@ addidional tools
     require('inspc/isArray')
     require('inspc/isNode')
     require('inspc/getUserAgent')
-    require('inspc/isGoogleChrome')
+    
+    const isGoogleChrome = require('inspc/isGoogleChrome')
+    
+    const userAgent = (function () {try {return staticContext.req.headers['user-agent']}catch(e){}}());
+    
+    isGoogleChrome(userAgent) 
     
 will print:
 
