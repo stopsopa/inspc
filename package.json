@@ -1,6 +1,9 @@
 {
   "name": "inspc",
   "version": "0.0.13",
+  "main": "logn.js",
+  "author": "Szymon Działowski",
   "description": "",
-  "main": "logn.js"
+  "license": "MIT",
+  "homepage": "https://github.com/stopsopa/inspc"
 }
