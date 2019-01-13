@@ -87,7 +87,7 @@ if [ "$DIFF" != "" ] || [ "$1" = "force" ]; then
             exit 4;
         fi
 
-        git push --tags --force
+        git push $ORIGIN $REMOTEBRANCH --tags
 
         #git push origin master --tags
 
