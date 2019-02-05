@@ -49,6 +49,20 @@ Just always safe version of console.log with no timestamp
 
     const logw = require('inspc/logw');  
     
+# grabbing output to string variable
+
+```javascript
+
+log.start();
+
+log.dump('test1');
+
+log('test2');
+
+// true or false to additionally flush data to screen after return (def false)
+const tmp = log.get(true);
+```    
+    
 require all
 ---
 
