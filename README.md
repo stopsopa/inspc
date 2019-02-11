@@ -101,6 +101,10 @@ addidional tools
     const userAgent = (function () {try {return staticContext.req.headers['user-agent']}catch(e){}}());
     
     isGoogleChrome(userAgent) 
+    
+# extra
+
+There is additional synchronouse method *process._rawDebug* that print directly to terminal
 
 
     
