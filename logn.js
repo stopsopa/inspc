@@ -510,6 +510,11 @@ log.t = require('./logt');
 
         var limit = args[args.length - 1];
 
+        if (args.length > 1 && args[1] === undefined) {
+
+            args.pop();
+        }
+
         if (args.length > 1 && Number.isInteger(limit) && limit > 0) {
 
             args.pop();
