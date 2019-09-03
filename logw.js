@@ -18,6 +18,8 @@ const log = (function () {
                 return log;
             }
         }
+
+        throw new Error('');
     }
     catch (e) {
         return function () {return log};
