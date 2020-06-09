@@ -523,7 +523,7 @@ log.t = require('./logt');
         }
         else {
 
-            limit = 1;
+            limit = 2;
         }
 
         function inner(d, l, index) {
