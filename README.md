@@ -1,6 +1,9 @@
 [![npm version](https://badge.fury.io/js/inspc.svg)](https://badge.fury.io/js/inspc)
 [![NpmLicense](https://img.shields.io/npm/l/inspc.svg)](https://github.com/stopsopa/inspc/blob/master/LICENSE)
 
+# DEPRECATED
+Created in 2018 - quite old now and not maintained
+
 
 logi
 ---
